@@ -1,0 +1,33 @@
+:root {
+  --win-bg: #f3f2f1;
+  --win-surface: #ffffff;
+  --win-primary: #0078d4;
+  --win-border: #edebe9;
+  --win-text: #323130;
+}
+
+body {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  background: var(--win-bg);
+  margin: 0;
+  padding: 20px;
+}
+
+.window-container {
+  background: var(--win-surface);
+  border: 1px solid var(--win-border);
+  border-radius: 4px;
+  box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, 0.132), 0 0.3px 0.9px 0 rgba(0, 0, 0, 0.108);
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.win-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--win-border);
+  margin-bottom: 24px;
+}

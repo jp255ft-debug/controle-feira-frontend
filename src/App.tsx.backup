@@ -8,7 +8,6 @@ import ReceiptView from './components/ReceiptView/ReceiptView';
 import LeadCapture from './components/LeadCapture/LeadCapture';
 import { useBrand } from './contexts/BrandContext';
 import { Product } from './types';
-import UpgradeButton from './components/UpgradeButton/UpgradeButton';
 
 // Inicializar ícones do Fluent UI
 initializeIcons();
@@ -118,16 +117,6 @@ const AppContent: React.FC = () => {
       }}>
         <p>Ferramenta fornecida por <strong>{brand.nome}</strong>.</p>
         <p>WhatsApp: {brand.contato.whatsapp} | Email: {brand.contato.email}</p>
-      </div>
-
-      {/* Botão de Upgrade fixo no canto inferior direito */}
-      <div style={{
-        position: 'fixed',
-        bottom: '20px',
-        right: '20px',
-        zIndex: 1000
-      }}>
-        <UpgradeButton />
       </div>
     </div>
   );
